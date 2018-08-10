@@ -94,6 +94,7 @@ restService.use(bodyParser.json());
 restService.post("/happy", function(req, res)
 {
   //var speech = "Next week in Delhi";
+  FindSchedule(jwt, apiKey, spreadsheetId, range);
   speech = sdata;
   return res.json(
   {
