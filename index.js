@@ -1,6 +1,17 @@
 "use strict";
 
 
+const { google } = require('googleapis');
+//const functions = require('firebase-functions');
+//const { WebhookClient } = require('dialogflow-fulfillment');
+//const { Card, Suggestion } = require('dialogflow-fulfillment');
+//process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
+let sdata = 'Beginning5';
+
+//var jwt = getJwt();
+//var apiKey = getApiKey();
+var spreadsheetId = '1y2N9oaj5lYujcR6VaYh3nFI_wxRngRZeAdSnjT3p07o';
+var range = 'Sheet1!A2:E98';
 
 const express = require("express");
 const bodyParser = require("body-parser");
