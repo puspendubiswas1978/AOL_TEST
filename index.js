@@ -1,10 +1,10 @@
 "use strict";
 
 const { google } = require('googleapis');
-const functions = require('firebase-functions');
-const { WebhookClient } = require('dialogflow-fulfillment');
-const { Card, Suggestion } = require('dialogflow-fulfillment');
-process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
+//const functions = require('firebase-functions');
+//const { WebhookClient } = require('dialogflow-fulfillment');
+//const { Card, Suggestion } = require('dialogflow-fulfillment');
+//process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
 let sdata = 'Beginning5';
 
 const express = require("express");
@@ -41,7 +41,7 @@ function getApiKey()
 
 function FindSchedule(jwt, apiKey, ssid, rangev)
 {
-    sdata: 'Function called5';
+    sdata= 'Function called5';
     const sheets = google.sheets({ version: 'v4' });
     sheets.spreadsheets.values.get({
         //sdata : 'Function called3',
