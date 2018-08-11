@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 
 const {google} = require("googleapis");
 //const functions = require('firebase-functions');
