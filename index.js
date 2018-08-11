@@ -39,7 +39,7 @@ function getApiKey()
     return apiKeyFile.key;
 }
 
-function FindSchedule(jwt, apiKey, ssid, rangev)
+/*function FindSchedule(jwt, apiKey, ssid, rangev)
 {
     sdata= 'Function called5';
     const sheets = google.sheets({ version: 'v4' });
@@ -87,7 +87,7 @@ function FindSchedule(jwt, apiKey, ssid, rangev)
             }
             //return celldata;
         });
-}
+} */
 
 restService.use(bodyParser.json());
 
