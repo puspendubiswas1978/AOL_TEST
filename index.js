@@ -6,7 +6,7 @@
 //const { WebhookClient } = require('dialogflow-fulfillment');
 //const { Card, Suggestion } = require('dialogflow-fulfillment');
 //process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
-let sdata = 'Beginning5';
+let sdata = 'Beginning6';
 
 const express = require("express");
 const bodyParser = require("body-parser");
