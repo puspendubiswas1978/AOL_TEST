@@ -14,7 +14,7 @@ const bodyParser = require("body-parser");
 const restService = express();
 
 //const agent = new WebhookClient({ request, response });
-var jwt = getJwt();
+//var jwt = getJwt();
 var apiKey = getApiKey();
 var spreadsheetId = '1y2N9oaj5lYujcR6VaYh3nFI_wxRngRZeAdSnjT3p07o';
 var range = 'Sheet1!A2:E98';
@@ -25,14 +25,14 @@ restService.use(
   })
 );
 
-function getJwt()
+/*function getJwt()
 {
     var credentials = require("./credentials.json");
     return new google.auth.JWT(
         credentials.client_email, null, credentials.private_key,
         ['https://www.googleapis.com/auth/spreadsheets']
     );
-}
+}*/
 
 function getApiKey()
 {
